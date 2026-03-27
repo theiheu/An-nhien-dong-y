@@ -40,7 +40,7 @@ const TikTokVideos = () => {
     <section className="py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <h2 className="text-3xl md:text-4xl text-primary text-center mb-12">
-          VIDEO THỰC TẾ HỌC VIÊN
+          VIDEO HƯỚNG DẪN THỰC TẾ ĐAT TRIỆU VIEW
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
