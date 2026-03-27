@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import logo from "./img/logo.png";
 import spa from "./img/tri-lieu-co-vai-gay-dong-y-2.jpg";
+import thao_duoc_gia_truyen from "./img/dau-xoa-bopjpg.jpg";
 
 // Declare fbq for Facebook Pixel
 declare global {
@@ -337,7 +338,7 @@ const WhyChooseUs = () => {
     {
       title: "SỞ HỮU THẢO DƯỢC GIA TRUYỀN",
       desc: "Độc quyền công thức Dầu xoa bóp An Nhiên giúp khách giảm đau nhanh, tăng hiệu quả trị liệu gấp nhiều lần.",
-      img: "./src/img/dau-xoa-bopjpg.jpg",
+      img: { thao_duoc_gia_truyen },
     },
     {
       title: "PHÁP LÝ VỮNG - LỢI NHUẬN CAO",
