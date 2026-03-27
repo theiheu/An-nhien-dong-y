@@ -338,7 +338,7 @@ const WhyChooseUs = () => {
     {
       title: "SỞ HỮU THẢO DƯỢC GIA TRUYỀN",
       desc: "Độc quyền công thức Dầu xoa bóp An Nhiên giúp khách giảm đau nhanh, tăng hiệu quả trị liệu gấp nhiều lần.",
-      img: { thao_duoc_gia_truyen },
+      img: thao_duoc_gia_truyen,
     },
     {
       title: "PHÁP LÝ VỮNG - LỢI NHUẬN CAO",
