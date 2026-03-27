@@ -13,6 +13,8 @@ import {
   ChevronRight,
   Star,
 } from "lucide-react";
+import logo from "./src/img/logo.png";
+import spa from "./src/img/tri-lieu-co-vai-gay-dong-y-2.jpg";
 
 // Declare fbq for Facebook Pixel
 declare global {
@@ -64,7 +66,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2">
           <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
-            <img src="./src/img/logo.png" alt="" />
+            <img src={logo} alt="" />
           </div>
 
           <span className="font-display font-bold text-primary text-xl">
@@ -171,7 +173,7 @@ const Hero = () => {
           >
             <div className="relative z-10 rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
               <img
-                src="./src/img/tri-lieu-co-vai-gay-dong-y-2.jpg"
+                src={spa}
                 alt="Instructor"
                 className="w-full h-auto"
                 referrerPolicy="no-referrer"
