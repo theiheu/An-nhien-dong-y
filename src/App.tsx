@@ -29,12 +29,20 @@ const trackFbEvent = (eventName: string, data?: any) => {
     window.fbq("track", eventName, data);
   }
 };
+import { useEffect } from "react";
 
 const TikTokVideos = () => {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://www.tiktok.com/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+  }, []);
+
   const videos = [
-    "https://www.tiktok.com/embed/7540966245181558023",
-    "https://www.tiktok.com/embed/7518974073892818183",
-    "https://www.tiktok.com/embed/7514245223766052114",
+    "7540966245181558023",
+    "7518974073892818183",
+    "7514245223766052114",
   ];
 
   return (
@@ -45,14 +53,26 @@ const TikTokVideos = () => {
         </h2>
 
         <div className="grid md:grid-cols-3 gap-6">
-          {videos.map((src, index) => (
-            <div key={index} className="rounded-2xl overflow-hidden shadow-lg">
-              <iframe
-                src={src}
-                className="w-full h-[500px]"
-                allow="autoplay; encrypted-media"
-                allowFullScreen
-              ></iframe>
+          {videos.map((id, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-lg p-2">
+              <blockquote
+                className="tiktok-embed"
+                cite={`https://www.tiktok.com/@user/video/${id}`}
+                data-video-id={id}
+                style={{ maxWidth: "100%", minWidth: "100%" }}
+              >
+                <section></section>
+              </blockquote>
+
+              {/* Nút chuyển qua TikTok */}
+              <a
+                href={`https://www.tiktok.com/@user/video/${id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block mt-3 text-center bg-black text-white py-2 rounded-xl hover:opacity-80"
+              >
+                Xem trên TikTok
+              </a>
             </div>
           ))}
         </div>
