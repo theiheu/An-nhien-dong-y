@@ -13,8 +13,8 @@ import {
   ChevronRight,
   Star,
 } from "lucide-react";
-import logo from "./src/img/logo.png";
-import spa from "./src/img/tri-lieu-co-vai-gay-dong-y-2.jpg";
+import logo from "./img/logo.png";
+import spa from "./img/tri-lieu-co-vai-gay-dong-y-2.jpg";
 
 // Declare fbq for Facebook Pixel
 declare global {
